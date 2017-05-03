@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    font-family: font92731;
 }
 
 .container {
@@ -7,7 +8,7 @@ body {
     cursor: pointer;
 }
 
-.bar1, .bar3 {
+.bar1, .bar2 {
     width: 20px;
     height: 2px;
     background-color: #333;
@@ -20,7 +21,7 @@ body {
     transform: rotate(-45deg) translate(-4px, 4.5px) ;
 }
 
-.change .bar3 {
+.change .bar2 {
     -webkit-transform: rotate(45deg) translate(-1px, -1px) ;
     transform: rotate(45deg) translate(-1px, -2px) ;
 }
@@ -43,7 +44,7 @@ body {
 .sidenav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 12pt;
     color: #818181;
     display: block;
     transition: 0.3s;
