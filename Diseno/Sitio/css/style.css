@@ -1,14 +1,14 @@
-body {
-    margin: 0;
-    font-family: font92731;
+* {
+  margin: 0;
+  font-family: font92731;
 }
 
-.container {
+.barras {
     display: inline-block;
     cursor: pointer;
 }
 
-.bar1, .bar2 {
+.barra1, .barra2 {
     width: 20px;
     height: 2px;
     background-color: #333;
@@ -16,12 +16,12 @@ body {
     transition: 0.4s;
 }
 
-.change .bar1 {
+.change .barra1 {
     -webkit-transform: rotate(-45deg) translate(-4px, 4px) ;
     transform: rotate(-45deg) translate(-4px, 4.5px) ;
 }
 
-.change .bar2 {
+.change .barra2 {
     -webkit-transform: rotate(45deg) translate(-1px, -1px) ;
     transform: rotate(45deg) translate(-1px, -2px) ;
 }
@@ -54,14 +54,14 @@ body {
     color: #f1f1f1;
 }
 
-.sidenav .closebtn {
+.sidenav .cruz {
     top: 0;
     right: 25px;
     font-size: 36px;
     margin-left: 50px;
 }
 
-.closebtn {
+.cruz {
     position: absolute;
     z-index: 2;
 }
