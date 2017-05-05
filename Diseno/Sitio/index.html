@@ -2,20 +2,22 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>Tina • Inicio</title>
+	<title>Monica • Inicio</title>
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="shortcut icon" href="icon.ico">
 	
 	<link href="https://www.fontify.me/wf/7116669ff62ea6ce905b50766eaca6b8" rel="stylesheet" type="text/css">
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/slideRigth.js"></script>
 </head>
 <body>
 
+<div id="out" onclick="closeNav()"></div>
+
+<!-- acceso menu oculto en la iz -->
 <a href="javascript:void(0)" class="cruz">
     <div class="barras" onclick="tranX(this)">
         <div class="barra1"></div>
@@ -23,9 +25,8 @@
     </div>
 </a>
 
-<div class="out" onclick="closeNav()" style="width:100%;height:100%;position:fixed;z-index:1;"></div>
-
-<div id="mySidenav" class="sidenav">
+<!-- menu oculto en la iz -->
+<nav id="mySidenav" class="sidenav">
   <a href="#">Artículos</a>
   <a href="#">Información Nutricional</a>
   <a href="#">Dietas</a>
@@ -37,7 +38,17 @@
   <a href="#">Historial Clínico</a>
   <a href="#">Chat</a>
   <a href="#">Asistencia Profesional</a>
-</div>
+</nav>
+
+<!-- menu -->
+<nav class="topnav" id="myTopnav">
+  <a href="#">Home</a>
+  <a href="#">News</a>
+  <a href="#">Contact</a>
+  <a href="#">About</a>
+</nav>
+
+
 
 </body>
 </html>
