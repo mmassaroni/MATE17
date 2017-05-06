@@ -79,10 +79,28 @@
 
 /**********************************************   FIN MENU IZ   **********************************************/
 
-.topnav {
+#menu {
   overflow: hidden;
+  clear: both;
+  float: left;
+  width: 100%;
   background: #333;
   background: rgba(0,0,0,0.8);
+}
+
+.topnav {
+    float: left;
+    left: 50%;
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+}
+
+.topnav li {
+    float: left;
+    position: relative;
+    right: 50%;
 }
 
 .topnav a {
@@ -125,4 +143,19 @@
     text-align: left;
   }
 
+}
+
+/************************************************************   USER   ************************************************************/
+
+.user {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    right: 0;
+    background-size: 14px 44px;
+    background-repeat: no-repeat;
+    background-image: url("../resource/image/user.png");
+    background-position: center center;
+    width: 14px;
+    height: 44px;
 }
