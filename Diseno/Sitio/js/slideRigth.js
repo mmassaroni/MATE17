@@ -2,27 +2,32 @@ $(document).ready(function($){
     $(".cruz").click(function(){
         var div_left = $("#mySidenav").position();
         if (div_left.left == -250) {
+            document.getElementById("mySidenav").style.opacity = "1";
             document.getElementById("mySidenav").style.left = "0";
             document.getElementById("out").style.opacity = "1";
+            $('.barras').addClass('change');
         } else {
+            document.getElementById("mySidenav").style.opacity = "0";
             document.getElementById("mySidenav").style.left = "-250px";
             document.getElementById("out").style.opacity = "0";
+            $('.barras').removeClass('change');
         }
     });
 
     $("#out").click(function(){
         var div_left = $("#mySidenav").position();
-        if (div_left.left == 0) {
+        if (div_left.left != -250) {
             $('.barras').removeClass('change');
         }
     });
 });  
 
 function closeNav() {
+    document.getElementById("mySidenav").style.opacity = "0";
     document.getElementById("mySidenav").style.left = "-250px";
     document.getElementById("out").style.opacity = "0";
 }
 
-function tranX(x) {
-    x.classList.toggle("change");
-}
+// function tranX(x) {
+//     x.classList.toggle("change");
+// }
