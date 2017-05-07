@@ -55,7 +55,7 @@ src: local('Helvetica Neue LT Std 45 Light'), url('../font/HelveticaNeueLTStd Lt
     opacity: 0;
 }
 
-.sidenav a {
+.sidenav .opSidnav {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 12pt;
@@ -64,7 +64,7 @@ src: local('Helvetica Neue LT Std 45 Light'), url('../font/HelveticaNeueLTStd Lt
     transition: 0.3s;
 }
 
-.sidenav a:hover, .offcanvas a:focus, .barras:hover{
+.sidenav .opSidnav:hover, .offcanvas .opSidnav:focus, .barras:hover{
     opacity: .65;
 }
 
@@ -99,6 +99,8 @@ src: local('Helvetica Neue LT Std 45 Light'), url('../font/HelveticaNeueLTStd Lt
   overflow: hidden;
   clear: both;
   float: left;
+  top: 0;
+  position: absolute;
   width: 100%;
   background: #333;
   background: rgba(0,0,0,0.8);
@@ -189,7 +191,7 @@ src: local('Helvetica Neue LT Std 45 Light'), url('../font/HelveticaNeueLTStd Lt
 .fa {
   padding: 12px;
   font-size: 22px;
-  width: 22px;
+  width: 37.6px;
   text-align: center;
   text-decoration: none;
   margin: 5px 2px;
