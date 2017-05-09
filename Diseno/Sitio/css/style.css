@@ -6,12 +6,12 @@ body {
     background-color: #f3f3f3;
 }
 
-@font-face {
-font-family: 'Helvetica Neue LT Std 45 Light';
+/*@font-face {
+font-family: "Open Sans";
 font-style: normal;
 font-weight: normal;
-src: local('Helvetica Neue LT Std 45 Light'), url('../font/HelveticaNeueLTStd Lt.woff') format('woff');
-}
+src: url("../fonts/OpenSans-Regular.ttf");
+}*/
 
 
 
@@ -90,7 +90,6 @@ src: local('Helvetica Neue LT Std 45 Light'), url('../font/HelveticaNeueLTStd Lt
     width:100%;
     height:100%;
     position:fixed;
-    z-index:1;
 }
 
 /**********************************************   FIN MENU IZ   **********************************************/
@@ -132,8 +131,7 @@ src: local('Helvetica Neue LT Std 45 Light'), url('../font/HelveticaNeueLTStd Lt
 }
 
 .topnav a:hover {
-  background-color: #ddd;
-  color: black;
+  opacity: .65
 }
 
 .topnav .icon {
@@ -199,7 +197,7 @@ src: local('Helvetica Neue LT Std 45 Light'), url('../font/HelveticaNeueLTStd Lt
 }
 
 .fa:hover {
-    opacity: 0.7;
+    opacity: 0.65;
 }
 
 .fa-facebook {
