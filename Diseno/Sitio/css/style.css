@@ -184,6 +184,10 @@ src: url("../fonts/OpenSans-Regular.ttf");
     background-position: center center;
 }
 
+.user:hover {
+    opacity: 0.65;
+}
+
 /****************************************************************   SOCIAL ICON   ****************************************************************/
 
 .fa {
