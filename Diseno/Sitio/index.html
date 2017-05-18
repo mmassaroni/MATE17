@@ -8,39 +8,26 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="shortcut icon" href="icon.ico">
 	
+	<!-- Script -->
 	<script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/slideRigth.js"></script>
 
+    <!-- Social Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-
-
-
-
-
-
-
-
-
-
+    <!-- Slide -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js"></script>
-<script src="https://rawgit.com/kenwheeler/slick/master/slick/slick.js"></script>
-<link href="https://rawgit.com/kenwheeler/slick/master/slick/slick-theme.css" rel="stylesheet"/>
-<link href="https://rawgit.com/kenwheeler/slick/master/slick/slick.css" rel="stylesheet"/>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js"></script>
+	<script src="https://rawgit.com/kenwheeler/slick/master/slick/slick.js"></script>
+	<link href="https://rawgit.com/kenwheeler/slick/master/slick/slick-theme.css" rel="stylesheet"/>
+	<link href="https://rawgit.com/kenwheeler/slick/master/slick/slick.css" rel="stylesheet"/>
+
+
 </head>
 <body>
 
 <div id="out" onclick="closeNav()"></div>
-
-<!-- acceso menu oculto en la iz -->
-<a href="javascript:void(0)" class="cruz">
-    <div class="barras">
-        <div class="barra1"></div>
-        <div class="barra2"></div>
-    </div>
-</a>
 
 <!-- menu oculto en la iz -->
 <nav id="mySidenav" class="sidenav">
@@ -63,17 +50,45 @@
 <!-- menu -->
 <div id="menu">
   <ul class="topnav" id="myTopnav">
+  	<li>
+  		
+		<!-- acceso menu oculto en la iz -->
+		<a href="javascript:void(0)" class="cruz">
+		    <div class="barras">
+		        <div class="barra1"></div>
+		        <div class="barra2"></div>
+		    </div>
+		</a>
+
+  	</li>
+    <li><a href="#" class="logoBanner"></a></li>
   	<li><a href="#">Noticias</a></li>
     <li><a href="#">Mapa</a></li>
     <li><a href="#">Calculadora</a></li>
-    <li><a href="#" class="logoBanner"></a></li>
     <li><a href="#">Alimentos</a></li>
     <li><a href="#">Dieta</a></li>
     <li><a href="#">Ejercicio</a></li>
+    <li><a href="#" class="user"></a></li>
   </ul>
 </div>
 
-<a href="#" class="user"></a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -87,15 +102,12 @@
   </div>
   <div class="progressBarContainer">
     <div>
-      <h3>Slide 1</h3>
       <span data-slick-index="0" class="progressBar"></span>
     </div>
     <div>
-      <h3>Slide 2</h3>
       <span data-slick-index="1" class="progressBar"></span>
     </div>
     <div>
-      <h3>Slide 3</h3>
       <span data-slick-index="2" class="progressBar"></span>
     </div>
   </div>
@@ -110,7 +122,7 @@ $(".slider").slick({
   arrows: false,
   dots: false,
   autoplay: false,
-  speed: 800,
+  speed: 700,
   slidesToShow: 1,
   slidesToScroll: 1,
 });
@@ -167,6 +179,7 @@ $(".slider").slick({
     	$('.single-item').slick('slickGoTo', goToThisIndex, false);
     	startProgressbar();
     });
+
 
 </script>
 
