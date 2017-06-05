@@ -153,7 +153,7 @@ body {
 .user {
     background-size: 13px 44px;
     background-repeat: no-repeat;
-    background-image: url("../resource/image/user.png");
+    background-image: url("../resource/image/user.svg");
     background-position: center center;
     height: 44px;
     padding: 0 17px;
