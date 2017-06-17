@@ -31,8 +31,7 @@ body {
 
 .topnav .cruz {
     z-index: 1000;
-    margin: 0 31.5px;
-    padding: 13px 16px 9px;
+    padding: 13px 0 9px;
 }
 
 
@@ -42,7 +41,6 @@ body {
 .sidenav {
     height: 100%;
     width: 250px;
-    left: -250px;
     position: fixed;
     z-index: 999;
     top: 0;
@@ -51,7 +49,6 @@ body {
     transition: 0.5s;
     padding-top: 60px;
     box-shadow: 4px 0 8px 0 rgba(0, 0, 0, 0.2), 6px 0 20px 0 rgba(0, 0, 0, 0.19);
-    opacity: 0;
 }
 
 .ul-sidenav {
@@ -100,24 +97,34 @@ body {
 
 /**********************************************   FIN MENU IZ   **********************************************/
 
-#menu {
-  clear: both;
-  float: left;
-  top: 0;
+#menuContainer {
   position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  margin: 0;
   z-index: 900;
   width: 100%;
+  max-height: 44px;
   background: rgba(0,0,0,0.8);
   transition: 1s;
+  display: block;
+}
+
+#menu {
+    margin: 0 auto;
+    max-width: 980px;
+    padding: 0 22px;
+    position: relative;
 }
 
 .topnav {
-    float: left;
-    left: 50%;
     list-style-type: none;
-    margin: 0 auto;
-    padding: 0;
     position: relative;
+    padding: 0;
+    margin: 0 -10px;
+    width: auto;
+    height: 44px;
 }
 
 .topnav .topnavli {
@@ -131,7 +138,7 @@ body {
   display: block;
   color: #fff;
   text-align: center;
-  padding: 12px 16px;
+  padding: 12px 0;
   text-decoration: none;
   font-size: 10.5pt;
 }
@@ -155,8 +162,7 @@ body {
     background-image: url("../resource/image/user.svg");
     background-position: center center;
     height: 44px;
-    padding: 0 17px;
-    margin: 0 40px;
+    padding: 12px 6.5px !important;
 }
 
 .dropdown-menu {
@@ -196,11 +202,11 @@ body {
 }
 
 .logoBanner {
-    margin: 10px 40px;
     background-size: 28px 28px;
     background-repeat: no-repeat;
     background-image: url(../resource/image/logoBanner.svg);
     background-position: center center;
+    padding: 22px 13px !important;
 }
 
 /****************************************************************   SOCIAL ICON   ****************************************************************/
