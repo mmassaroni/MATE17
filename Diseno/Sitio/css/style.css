@@ -66,7 +66,7 @@ body {
 
 .sidenav .opSidnav {
     text-decoration: none;
-    font-size: 12pt;
+    font-size: 10.5pt;
     color: #fff;
     display: block;
     transition: 0.3s;
@@ -204,7 +204,7 @@ body {
 }
 
 .logoBanner {
-    background-size: 26px;
+    background-size: 25px;
     background-repeat: no-repeat;
     background-image: url(../resource/image/logoBanner.svg);
     background-position: center center;
