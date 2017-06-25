@@ -116,6 +116,7 @@ body {
     max-width: 980px;
     padding: 0 22px;
     position: relative;
+    text-align: center;
 }
 
 .topnav {
@@ -128,9 +129,10 @@ body {
 }
 
 .topnav .topnavli {
-    float: left;
+    display: inline-block;
     position: relative;
-    right: 50%;
+    height: 44px;
+    margin: 0 2.8831619%;
 }
 
 .topnav a {
@@ -166,7 +168,7 @@ body {
 }
 
 .dropdown-menu {
-  left: -64px;
+  left: -114px;
   width: 240px;
   border: 1px solid #d6d6d6;
   border-radius: 2px;
@@ -202,7 +204,7 @@ body {
 }
 
 .logoBanner {
-    background-size: 28px 28px;
+    background-size: 26px;
     background-repeat: no-repeat;
     background-image: url(../resource/image/logoBanner.svg);
     background-position: center center;
@@ -271,6 +273,7 @@ body {
 .sliderContainer {
   position: relative;
   z-index: 800;
+  cursor: default;
 }
 
 .slider {
