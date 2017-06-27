@@ -176,6 +176,14 @@ body {
   top: 44px;
 }
 
+.dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover{
+    transition: 0.8s;
+}
+
+.dropdown-menu li a{
+  width: 100%;
+}
+
 .dropdown-menu .arrow {
   left: 50%;
   top: -20.5px;
