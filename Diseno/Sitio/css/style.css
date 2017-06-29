@@ -184,24 +184,36 @@ body {
   width: 100%;
 }
 
-.dropdown-menu .arrow {
-  left: 50%;
-  top: -20.5px;
-  margin-left: -10px;
-  border-width: 11px;
-  position: absolute;
-  border-color: transparent transparent #fff;
-  border-style: solid;
+.open.arrow:before {
+    left: 49%;
+    top: 25px;
+    margin-left: -10px;
+    border-width: 11px;
+    position: absolute;
+    border-color: transparent transparent #d6d6d6;
+    border-style: solid;
+    opacity: 1 !important;
 }
 
-.dropdown-menu .arrowBorder {
-  left: 50%;
-  top: -22px;
-  margin-left: -10px;
-  border-width: 11px;
-  position: absolute;
-  border-color: transparent transparent #d6d6d6;
-  border-style: solid;
+.open.arrow:after {
+    left: 49%;
+    top: 25.5px;
+    z-index: 1000;
+    margin-left: -10px;
+    border-width: 11px;
+    position: absolute;
+    border-color: transparent transparent #fff;
+    border-style: solid;
+    opacity: 1 !important;
+}
+
+.open.arrow:before, .open.arrow:after {
+    content: " ";
+    opacity: 0;
+    display: block;
+    height: 0;
+    width: 0;
+    transition: opacity 0.3s;
 }
 
 .dropdown-menu .userLi {
